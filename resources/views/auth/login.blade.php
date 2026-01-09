@@ -9,18 +9,18 @@
             $username = 'admin';
             $password = '123456';
 
-            $demo_types = [
-                'all_in_one' => 'admin',
-                'super_market' => 'admin',
-                'pharmacy' => 'admin-pharmacy',
-                'electronics' => 'admin-electronics',
-                'services' => 'admin-services',
-                'restaurant' => 'admin-restaurant',
-                'superadmin' => 'superadmin',
-                'woocommerce' => 'woocommerce_user',
-                'essentials' => 'admin-essentials',
-                'manufacturing' => 'manufacturer-demo',
-            ];
+            // $demo_types = [
+            //     'all_in_one' => 'admin',
+            //     'super_market' => 'admin',
+            //     'pharmacy' => 'admin-pharmacy',
+            //     'electronics' => 'admin-electronics',
+            //     'services' => 'admin-services',
+            //     'restaurant' => 'admin-restaurant',
+            //     'superadmin' => 'superadmin',
+            //     'woocommerce' => 'woocommerce_user',
+            //     'essentials' => 'admin-essentials',
+            //     'manufacturing' => 'manufacturer-demo',
+            // ];
 
             if (!empty($_GET['demo_type']) && array_key_exists($_GET['demo_type'], $demo_types)) {
                 $username = $demo_types[$_GET['demo_type']];
@@ -28,7 +28,12 @@
         }
     @endphp
     <div class="row">
-        <div class="col-md-3">
+         <div class="col-md-3">
+            {{-- <div class="tw-p-5 md:tw-p-6 tw-mb-4 tw-rounded-2xl tw-transition-all tw-duration-200 tw-bg-white tw-shadow-sm tw-ring-1 tw-ring-gray-200">
+                <div id="map_login" style="height: 400px;"></div>
+            </div> --}}
+        </div>
+        <div class="col-md-6">
             <div class="tw-p-5 md:tw-p-6 tw-mb-4 tw-rounded-2xl tw-transition-all tw-duration-200 tw-bg-white tw-shadow-sm tw-ring-1 tw-ring-gray-200">
                 <div class="tw-flex tw-flex-col tw-gap-4 tw-dw-rounded-box tw-dw-p-6 tw-dw-max-w-md">
                     <div class="tw-flex tw-items-center tw-flex-col">
@@ -120,19 +125,15 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="tw-p-5 md:tw-p-6 tw-mb-4 tw-rounded-2xl tw-transition-all tw-duration-200 tw-bg-white tw-shadow-sm tw-ring-1 tw-ring-gray-200">
-                <div id="map_login" style="height: 400px;"></div>
-            </div>
-        </div>
+       
         <div class="col-md-3">
-            <div class="tw-p-5 md:tw-p-6 tw-mb-4 tw-rounded-2xl tw-transition-all tw-duration-200 tw-bg-white tw-shadow-sm tw-ring-1 tw-ring-gray-200">
+            {{-- <div class="tw-p-5 md:tw-p-6 tw-mb-4 tw-rounded-2xl tw-transition-all tw-duration-200 tw-bg-white tw-shadow-sm tw-ring-1 tw-ring-gray-200">
                 <ol>
                     @foreach ($lokasi as $row)
                         <li>{{ $row->name }}</li>
                     @endforeach
                 </ol>
-            </div>
+            </div> --}}
         </div>
     </div>
 
