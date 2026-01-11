@@ -109,13 +109,13 @@ class AdminSidebarMenu
                                 ['icon' => '', 'active' => request()->segment(1) == 'customer-group']
                             );
                         }
-                        if (auth()->user()->can('supplier.create') || auth()->user()->can('customer.create')) {
-                            $sub->url(
-                                action([\App\Http\Controllers\ContactController::class, 'getImportContacts']),
-                                __('lang_v1.import_contacts'),
-                                ['icon' => '', 'active' => request()->segment(1) == 'contacts' && request()->segment(2) == 'import']
-                            );
-                        }
+                        // if (auth()->user()->can('supplier.create') || auth()->user()->can('customer.create')) {
+                        //     $sub->url(
+                        //         action([\App\Http\Controllers\ContactController::class, 'getImportContacts']),
+                        //         __('lang_v1.import_contacts'),
+                        //         ['icon' => '', 'active' => request()->segment(1) == 'contacts' && request()->segment(2) == 'import']
+                        //     );
+                        // }
 
                         if (!empty(env('GOOGLE_MAP_API_KEY'))) {
                             $sub->url(
