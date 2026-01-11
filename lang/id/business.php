@@ -80,7 +80,7 @@ return [
     'all_your_business_locations' => 'Semua lokasi bisnis Anda',
     'add_business_location' => 'Tambahkan lokasi bisnis baru',
     'business_location_added_success' => 'Lokasi bisnis berhasil ditambahkan',
-    'edit_business_location' => 'Edit lokasi bisnis',
+    'edit_business_location' => 'Edit Lokasi Bisnis',
     'business_location_updated_success' => 'Lokasi bisnis berhasil diperbarui',
     'location' => 'Lokasi',
     'already_registered' => 'Sudah terdaftar?',

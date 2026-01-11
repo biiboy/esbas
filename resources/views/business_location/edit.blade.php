@@ -50,14 +50,14 @@
                         {!! Form::text('zip_code', $location->zip_code, ['class' => 'form-control', 'placeholder' => __('business.zip_code'), 'required']) !!}
                     </div>
                 </div>
-                <div class="col-sm-6">
+                {{-- <div class="col-sm-6">
                     <div class="form-group">
                         {!! Form::label('lokasi', 'Lokasi:') !!}
                         <div id="map_lokasi" style="height: 250px;"></div>
                         <input type="text" name="latitude" id="latitude" value="{{ $location->latitude ?? '' }}">
                         <input type="text" name="longitude" id="longitude" value="{{ $location->longitude ?? '' }}">
                     </div>
-                </div>
+                </div> --}}
                 <div class="clearfix"></div>
                 <div class="col-sm-6">
                     <div class="form-group">
