@@ -6,7 +6,7 @@
 		<div class="col-md-12">
 			<h4>@lang('lang_v1.more_info')</h4>
 		</div>
-		<div class="col-md-4">
+		{{-- <div class="col-md-4">
 			<p><strong>@lang( 'lang_v1.dob' ):</strong> @if(!empty($user->dob)) {{@format_date($user->dob)}} @endif</p>
 			<p><strong>@lang( 'lang_v1.gender' ):</strong> @if(!empty($user->gender)) @lang('lang_v1.' .$user->gender) @endif</p>
 			<p><strong>@lang( 'lang_v1.marital_status' ):</strong> @if(!empty($user->marital_status)) @lang('lang_v1.' .$user->marital_status) @endif</p>
@@ -65,7 +65,7 @@
 		<div class="col-md-4">
 			<p><strong>@lang('lang_v1.branch'):</strong> {{$bank_details['branch'] ?? ''}}</p>
 			<p><strong>@lang('lang_v1.tax_payer_id'):</strong> {{$bank_details['tax_payer_id'] ?? ''}}</p>
-		</div>
+		</div> --}}
 		@if(!empty($view_partials))
 	      @foreach($view_partials as $partial)
 	        {!! $partial !!}

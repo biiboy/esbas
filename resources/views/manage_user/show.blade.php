@@ -77,18 +77,18 @@
                             <a href="#user_info_tab" data-toggle="tab" aria-expanded="true"><i class="fas fa-user" aria-hidden="true"></i> @lang( 'lang_v1.user_info')</a>
                         </li>
                         
-                        <li>
+                        {{-- <li>
                             <a href="#documents_and_notes_tab" data-toggle="tab" aria-expanded="true"><i class="fas fa-paperclip" aria-hidden="true"></i> @lang('lang_v1.documents_and_notes')</a>
                         </li>
 
                         <li>
                             <a href="#activities_tab" data-toggle="tab" aria-expanded="true"><i class="fas fa-pen-square" aria-hidden="true"></i> @lang('lang_v1.activities')</a>
-                        </li>
+                        </li> --}}
                     </ul>
 
                     <div class="tab-content">
                         <div class="tab-pane active" id="user_info_tab">
-                            <div class="row">
+                            {{-- <div class="row">
                                 <div class="col-md-12">
                                     <div class="col-md-6">
                                             <p><strong>@lang( 'lang_v1.cmmsn_percent' ): </strong> {{$user->cmmsn_percent}}%</p>
@@ -120,7 +120,7 @@
                                         </p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             @include('user.show_details')
                         </div>
                         <div class="tab-pane" id="documents_and_notes_tab">

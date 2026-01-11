@@ -152,7 +152,7 @@
         @endcomponent
         </div>
 
-        <div class="col-md-12">
+        {{-- <div class="col-md-12">
             @component('components.widget', ['title' => __('sale.sells')])
 
             <div class="col-md-4">
@@ -192,7 +192,7 @@
                 </div>
             </div>
             @endcomponent
-        </div>
+        </div> --}}
     </div>
     @include('user.edit_profile_form_part', ['bank_details' => !empty($user->bank_details) ? json_decode($user->bank_details, true) : null])
 

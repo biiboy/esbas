@@ -4,9 +4,9 @@
         <div class="col-sm-3">
             @include('contact.contact_basic_info')
         </div>
-        <div class="col-sm-3 mt-56">
+        {{-- <div class="col-sm-3 mt-56">
             @include('contact.contact_more_info')
-        </div>
+        </div> --}}
         @if( $contact->type != 'customer')
             <div class="col-sm-3 mt-56">
                 @include('contact.contact_tax_info')

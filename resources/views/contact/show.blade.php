@@ -26,9 +26,9 @@
             <div class="info_col">
                 @include('contact.contact_basic_info')
             </div>
-            <div class="info_col">
+            {{-- <div class="info_col">
                 @include('contact.contact_more_info')
-            </div>
+            </div> --}}
             @if( $contact->type != 'customer')
                 <div class="info_col">
                     @include('contact.contact_tax_info')
@@ -101,7 +101,7 @@
                             </li>
                         @endif
                     @endif
-                    <li class="
+                    {{-- <li class="
                             @if(!empty($view_type) &&  $view_type == 'documents_and_notes')
                                 active
                             @else
@@ -117,7 +117,7 @@
                                 ''
                             @endif">
                         <a href="#payments_tab" data-toggle="tab" aria-expanded="true"><i class="fas fa-money-bill-alt" aria-hidden="true"></i> @lang('sale.payments')</a>
-                    </li>
+                    </li> --}}
 
                     @if( in_array($contact->type, ['customer', 'both']) && session('business.enable_rp'))
                         <li class="
