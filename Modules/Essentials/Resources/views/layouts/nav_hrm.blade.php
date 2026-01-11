@@ -13,7 +13,7 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            {{-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     @can('essentials.crud_leave_type')
                         <li @if(request()->segment(2) == 'leave-type') class="active" @endif><a href="{{action([\Modules\Essentials\Http\Controllers\EssentialsLeaveTypeController::class, 'index'])}}">@lang('essentials::lang.leave_type')</a></li>
@@ -44,7 +44,7 @@
                     @endif
                 </ul>
 
-            </div><!-- /.navbar-collapse -->
+            </div><!-- /.navbar-collapse --> --}}
         </div><!-- /.container-fluid -->
     </nav>
 </section>

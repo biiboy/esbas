@@ -15,7 +15,7 @@ return [
     'share' => 'Bagikan',
     'share_document' => 'Bagikan dokumen',
     'user' => 'Pengguna',
-    'role' => 'Wewenang',
+    'role' => 'Hak Akses',
     'shared_by' => 'Dibagikan oleh :',
     'todo' => 'Kerjaan',
     'todo_list' => 'Daftar Kerja',

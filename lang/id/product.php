@@ -23,7 +23,7 @@ return [
     'brand' => 'Merek',
     'tax' => 'Pajak',
     'sku' => 'SKU',
-    'alert_quantity' => 'Peringatan kwantitas',
+    'alert_quantity' => 'Peringatan kuantitas',
     'product_name' => 'Nama Produk',
     'auto_generate' => 'Generate otomatis',
     'manage_stock' => 'Mengelola stok?',

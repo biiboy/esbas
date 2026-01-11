@@ -1,4 +1,4 @@
-@component('components.widget', ['title' => __('essentials::lang.hrm_details')])
+{{-- @component('components.widget', ['title' => __('essentials::lang.hrm_details')])
 <div class="row">
 	<div class="col-md-6">
 		<div class="form-group">
@@ -40,4 +40,4 @@
         {!! Form::select('pay_components[]', $pay_comoponenets, !empty($allowance_deduction_ids) ? $allowance_deduction_ids : [], ['class' => 'form-control select2', 'multiple' ]); !!}
     </div>
 </div>
-@endcomponent
+@endcomponent --}}

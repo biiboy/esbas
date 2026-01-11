@@ -148,7 +148,7 @@
     @endcomponent
   </div>
 
-  <div class="col-md-12">
+  {{-- <div class="col-md-12">
     @component('components.widget', ['title' => __('sale.sells')])
       <div class="col-md-4">
         <div class="form-group">
@@ -186,7 +186,7 @@
       </div>
 
     @endcomponent
-  </div>
+  </div> --}}
 
   </div>
     @include('user.edit_profile_form_part')

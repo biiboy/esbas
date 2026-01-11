@@ -6,7 +6,7 @@
 <!-- Main content -->
 <section class="content">
 	<div class="row row-custom">
-		<div class="col-md-4 col-sm-6 col-xs-12 col-custom">
+		{{-- <div class="col-md-4 col-sm-6 col-xs-12 col-custom">
 			<div class="box box-solid">
 				<div class="box-header with-border">
 	                <i class="fas fa-sign-out-alt"></i>
@@ -36,8 +36,8 @@
                     </table>
                 </div>
 	        </div>
-		</div>
-		<div class="col-md-4 col-sm-6 col-xs-12 col-custom">
+		</div> --}}
+		{{-- <div class="col-md-4 col-sm-6 col-xs-12 col-custom">
 			<div class="box box-solid">
 				<div class="box-header with-border">
 	                <i class="fas fa-bullseye"></i>
@@ -87,18 +87,18 @@
                     </table>
                 </div>
 	        </div>
-		</div>
-		@include('essentials::dashboard.birthdays')
+		</div> --}}
+		{{-- @include('essentials::dashboard.birthdays')
 		@if(!$is_admin)
         	@include('essentials::dashboard.holidays')
-     	@endif
-        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+     	@endif --}}
+        {{-- <div class="col-md-4 col-sm-6 col-xs-12 text-center">
             <a href="{{action([\Modules\Essentials\Http\Controllers\PayrollController::class, 'getMyPayrolls'])}}"
                 class="btn btn-lg btn-success">
                 <i class="fas fa-coins"></i>
                 @lang('essentials::lang.my_payrolls')
             </a>
-        </div>
+        </div> --}}
 	</div>
 	@if($is_admin)
 	<hr>
@@ -142,7 +142,7 @@
     	</div>
     	@endcan
         @can('essentials.approve_leave')
-    	<div class="col-md-4 col-sm-6 col-xs-12 col-custom">
+    	{{-- <div class="col-md-4 col-sm-6 col-xs-12 col-custom">
             <div class="box box-solid">
                 <div class="box-header with-border">
                     <i class="fas fa-user-times"></i>
@@ -196,13 +196,13 @@
                     </table>
                 </div>
             </div>
-        </div>
+        </div> --}}
         @endcan
-        @if($is_admin)
+        {{-- @if($is_admin)
         	@include('essentials::dashboard.holidays')
-     	@endif
+     	@endif --}}
     </div>
-    <div class="row row-custom">
+    {{-- <div class="row row-custom">
     	@if($is_admin)
     		<div class="col-md-4 col-sm-6 col-xs-12 col-custom">
 	        	<div class="box box-solid">
@@ -277,7 +277,7 @@
 	            </div>
 	        </div>
     	@endif
-    </div>
+    </div> --}}
     
 </section>
 @stop

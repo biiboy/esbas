@@ -415,13 +415,13 @@ class ContactController extends Controller
 
                     $html .= '<li class="divider"></li>';
                     if (auth()->user()->can('customer.view')) {
-                        $html .= '
-                                <li>
-                                    <a href="'.action([\App\Http\Controllers\ContactController::class, 'show'], [$row->id]).'?view=ledger">
-                                        <i class="fas fa-scroll" aria-hidden="true"></i>
-                                        '.__('lang_v1.ledger').'
-                                    </a>
-                                </li>';
+                        // $html .= '
+                        //         <li>
+                        //             <a href="'.action([\App\Http\Controllers\ContactController::class, 'show'], [$row->id]).'?view=ledger">
+                        //                 <i class="fas fa-scroll" aria-hidden="true"></i>
+                        //                 '.__('lang_v1.ledger ').'
+                        //             </a>
+                        //         </li>';
 
                         if (in_array($row->type, ['both', 'supplier'])) {
                             $html .= '<li>
@@ -447,12 +447,12 @@ class ContactController extends Controller
                             </li>';
                         }
 
-                        $html .= '<li>
-                                <a href="'.action([\App\Http\Controllers\ContactController::class, 'show'], [$row->id]).'?view=documents_and_notes">
-                                    <i class="fas fa-paperclip" aria-hidden="true"></i>
-                                     '.__('lang_v1.documents_and_notes').'
-                                </a>
-                            </li>';
+                        // $html .= '<li>
+                        //         <a href="'.action([\App\Http\Controllers\ContactController::class, 'show'], [$row->id]).'?view=documents_and_notes">
+                        //             <i class="fas fa-paperclip" aria-hidden="true"></i>
+                        //              '.__('lang_v1.documents_and_notes').'
+                        //         </a>
+                        //     </li>';
                     }
                     $html .= '</ul></div>';
 

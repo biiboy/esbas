@@ -65,7 +65,7 @@
             </div>
         </div>
 
-        <div class="col-sm-4">
+        {{-- <div class="col-sm-4">
             <div class="form-group">
                 <div class="checkbox">
                 <br>
@@ -91,8 +91,8 @@
                 </div>
             </div>
         </div>
-        <div class="clearfix"></div>
-        <div class="col-sm-4">
+        <div class="clearfix"></div> --}}
+        {{-- <div class="col-sm-4">
             <div class="form-group">
                 <div class="checkbox">
                     <label>
@@ -110,10 +110,10 @@
                     </label>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
     </div>
-    <hr>
+    {{-- <hr>
     <div class="row">
         <div class="col-md-12"><h4>@lang('lang_v1.commission_agent'):</h4></div>
         <div class="col-sm-4">
@@ -147,8 +147,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <hr>
+    </div> --}}
+    {{-- <hr>
     <div class="row">
         <div class="col-md-12"><h4>@lang('lang_v1.payment_link') @show_tooltip(__('lang_v1.payment_link_help_text')):</h4></div>
         <div class="col-sm-4">
@@ -191,5 +191,5 @@
                 {!! Form::text('pos_settings[stripe_secret_key]', $pos_settings['stripe_secret_key'] ?? '', ['class' => 'form-control', 'id' => 'stripe_secret_key']); !!}
             </div>
         </div>
-    </div>
+    </div> --}}
 </div>

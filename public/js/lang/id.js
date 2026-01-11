@@ -6,7 +6,7 @@ LANG = {
     'no_products': 'Tidak ada produk yang ditambahkan',
     'paid_amount_is_less_than_payable': 'Jumlah yang dibayarkan kurang dari jumlah yang harus dibayarkan. \nSilakan tekan OK untuk mengirimkan penjualan.',
     'paid_amount_is_more_than_payable': 'Jumlah yang dibayarkan lebih dari jumlah yang harus dibayarkan. \nSilakan periksa.',
-    'confirm_delete_role': 'Wewenang ini akan dihapus.',
+    'confirm_delete_role': 'Hak Akses ini akan dihapus.',
     'sku_already_exists': 'SKU sudah ada.',
     'ref_no_already_exists': 'Nomor referensi sudah digunakan.',
     'out_of_stock': 'Stok habis',
