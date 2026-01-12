@@ -1,7 +1,6 @@
 @if (Module::has('Essentials'))
     @include('essentials::attendance.clock_in_clock_out_modal')
 @endif
-{{-- <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCU61c8oBdfuzO2kVpTvdXwMYbzCDHmeeY&language=id&region=ID&loading=async&callback=initMap" type="text/javascript"></script> --}}
 <script type="text/javascript">
     $(document).ready(function() {
         $('#essentials_dob').datepicker();
