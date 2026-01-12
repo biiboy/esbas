@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'welcome_back' => 'Selamat Datang',
     'enable_editing_product_from_purchase' => 'Aktifkan pengeditan harga produk dari layar pembelian',
     'sales_commission_agent' => 'Agen Komisi Penjualan',
     'sales_commission_agents' => 'Agen Komisi Penjualan',

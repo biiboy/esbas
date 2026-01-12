@@ -191,7 +191,7 @@ return [
     'all_products' => 'All Products',
     'login' => 'Login',
     'login_to_your' => 'Login to your',
-    'welcome_back' => 'Welcome Back',
+    'welcome_back' => 'Selamat Datang',
     'register' => 'Register',
     'username' => 'Username',
     'password' => 'Password',
