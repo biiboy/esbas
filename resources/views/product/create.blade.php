@@ -178,7 +178,7 @@
     </div>
     @endcomponent
 
-    {{-- @component('components.widget', ['class' => 'box-primary'])
+    @component('components.widget', ['class' => 'box-primary'])
     <div class="row">
         @if(session('business.enable_product_expiry'))
 
@@ -303,12 +303,12 @@
         <div class="clearfix"></div>
         @include('layouts.partials.module_form_part')
     </div>
-    @endcomponent --}}
+    @endcomponent
 
-    @component('components.widget', ['class' => 'box-primary'])
+    @component('components.widget', ['class' => 'box-primary','display: none;'])
     <div class="row">
 
-        {{-- <div class="col-sm-4 @if(!session('business.enable_price_tax')) hide @endif">
+        <div class="col-sm-4 @if(!session('business.enable_price_tax')) hide @endif">
             <div class="form-group">
                 {!! Form::label('tax', __('product.applicable_tax') . ':') !!}
                 {!! Form::select('tax', $taxes, !empty($duplicate_product->tax) ? $duplicate_product->tax : null, ['placeholder' => __('messages.please_select'), 'class' => 'form-control select2'], $tax_attributes); !!}
@@ -331,7 +331,7 @@
                 {!! Form::select('type', $product_types, !empty($duplicate_product->type) ? $duplicate_product->type : null, ['class' => 'form-control select2',
                 'required', 'data-action' => !empty($duplicate_product) ? 'duplicate' : 'add', 'data-product_id' => !empty($duplicate_product) ? $duplicate_product->id : '0']); !!}
             </div>
-        </div> --}}
+        </div>
 
         <div class="form-group col-sm-12" id="product_form_part">
             @include('product.partials.single_product_form_part', ['profit_percent' => $default_profit_percent])
@@ -347,13 +347,13 @@
             <input type="hidden" name="submit_type" id="submit_type">
             <div class="text-center">
                 <div class="btn-group">
-                    {{-- @if($selling_price_group_count)
+                    @if($selling_price_group_count)
                     <button type="submit" value="submit_n_add_selling_prices" class="tw-dw-btn tw-dw-btn-warning tw-dw-btn-lg tw-text-white submit_product_form">@lang('lang_v1.save_n_add_selling_price_group_prices')</button>
-                    @endif --}}
+                    @endif
 
-                    {{-- @can('product.opening_stock')
+                    @can('product.opening_stock')
                     <button id="opening_stock_button" @if(!empty($duplicate_product) && $duplicate_product->enable_stock == 0) disabled @endif type="submit" value="submit_n_add_opening_stock" class="tw-dw-btn tw-dw-btn-lg tw-text-white bg-purple submit_product_form">@lang('lang_v1.save_n_add_opening_stock')</button>
-                    @endcan --}}
+                    @endcan
 
                     <button type="submit" value="save_n_add_another" class="tw-dw-btn tw-dw-btn-lg bg-maroon submit_product_form">@lang('lang_v1.save_n_add_another')</button>
 
