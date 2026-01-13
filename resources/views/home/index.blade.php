@@ -487,7 +487,7 @@
                                         <path d="M12 16h.01"></path>
                                     </svg>
                                 </div>
-                                <div class="tw-flex tw-items-center tw-flex-1 tw-min-w-0 tw-gap-1">
+                                {{-- <div class="tw-flex tw-items-center tw-flex-1 tw-min-w-0 tw-gap-1">
                                     <div class="tw-w-full sm:tw-w-1/2 md:tw-w-1/2">
                                         <h3 class="tw-font-bold tw-text-base lg:tw-text-xl">
                                             {{ __('home.product_stock_alert') }}
@@ -503,7 +503,7 @@
                                             ]) !!}
                                         @endif
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                             <div class="tw-flow-root tw-mt-5  tw-border-gray-200">
                                 <div class="tw--mx-4 tw--my-2 tw-overflow-x-auto sm:tw--mx-5">

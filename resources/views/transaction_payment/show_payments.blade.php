@@ -142,7 +142,7 @@
                     </div>
                     <br>
                 @endif
-                @if($transaction->type == 'sell' || $transaction->type == 'hms_booking')
+                {{-- @if($transaction->type == 'sell' || $transaction->type == 'hms_booking')
                     <div class="row no-print">
                         <div class="col-md-12 text-right">
                             <button type="button" class="tw-dw-btn tw-dw-btn-info tw-text-white tw-dw-btn-xs btn-modal" 
@@ -155,7 +155,7 @@
                         </div>
                     </div>
                     <br>
-                @endif
+                @endif --}}
             @endcan
             @if($transaction->payment_status != 'paid')
                 <div class="row">
